@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cookies Shop</title>
+    <link rel="stylesheet" href="ss.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="webproject/home/logo.png" alt="logo" />
+            <h1>The Cookies Shop</h1>
+        </div>
+        <div class="lists">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button id="modeToggle" class="mode-toggle"><i class="fas fa-moon"></i></button>
+
+    </nav>
+
+
+        <section class="gallery">
+            <h2>Chocolate Chips Cookies</h2>
+            <div class="gallery-grid">
+                <img src="webproject/gallery/c.c1.jpeg" alt="chocochips">
+
+                <img src="webproject/gallery/c.c2.jpeg" alt="chocochips">
+
+                <img src="webproject/gallery/c.c3.jpeg" alt="chocochips">
+
+                <img src="webproject/gallery/c.c4.jpeg" alt="chocochips">
+
+                <img src="webproject/gallery/c.c5.jpeg" alt="chocochips">
+
+                <img src="webproject/gallery/c.c6.jpeg" alt="chocochips">
+
+                <img src="webproject/gallery/c.c7.jpeg" alt="chocochips">
+            </div>
+
+            <h2>Shortbread Cookies</h2>
+            <div class="gallery-grid">
+                <img src="webproject/gallery/s.c1.jpeg" alt="shortbread">
+
+                <img src="webproject/gallery/s.c2.jpeg" alt="shortbread">
+
+                <img src="webproject/gallery/s.c3.jpeg" alt="shortbread">
+
+                <img src="webproject/gallery/s.c4.jpeg" alt="shortbread">
+
+                <img src="webproject/gallery/s.c5.jpeg" alt="shortbread">
+
+                <img src="webproject/gallery/s.c6.jpeg" alt="shortbread">
+
+                <img src="webproject/gallery/s.c7.jpeg" alt="shortbread">
+            </div>
+
+            <h2>Macaron Cookies</h2>
+            <div class="gallery-grid">
+                <img src="webproject/gallery/m.c1.jpeg" alt="macaron">
+
+                <img src="webproject/gallery/m.c2.jpeg" alt="macaron">
+
+                <img src="webproject/gallery/m.c3.jpeg" alt="macaron">
+
+                <img src="webproject/gallery/m.c4.jpeg" alt="macaron">
+
+                <img src="webproject/gallery/m.c5.jpeg" alt="macaron">
+
+                <img src="webproject/gallery/m.c6.jpeg" alt="macaron">
+
+                <img src="webproject/gallery/m.c7.jpeg" alt="macaron">
+            </div>
+
+            <h2>Biscotti Cookies</h2>
+            <div class="gallery-grid">
+                <img src="webproject/gallery/b.c1.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/b.c2.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/b.c3.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/b.c4.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/b.c5.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/b.c6.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/b.c7.jpeg" alt="biscotti">
+            </div>
+
+            <h2>Sugar Cookies</h2>
+            <div class="gallery-grid">
+                <img src="webproject/gallery/su.c1.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/su.c2.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/su.c3.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/su.c4.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/su.c5.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/su.c6.jpeg" alt="biscotti">
+
+                <img src="webproject/gallery/su.c7.jpeg" alt="biscotti">
+            </div>
+
+            <h2>Oatmeal Raisin Cookies</h2>
+            <div class="gallery-grid">
+                <img src="webproject/gallery/o.r1.jpeg" alt="oatmeal">
+
+                <img src="webproject/gallery/o.r2.jpeg" alt="oatmeal">
+
+                <img src="webproject/gallery/o.r3.jpeg" alt="oatmeal">
+
+                <img src="webproject/gallery/o.r4.jpeg" alt="oatmeal">
+
+                <img src="webproject/gallery/o.r5.jpeg" alt="oatmeal">
+
+                <img src="webproject/gallery/o.r6.jpeg" alt="oatmeal">
+
+                <img src="webproject/gallery/o.r7.jpeg" alt="oatmeal">
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-media-links">
+                <a href="#"><img src="webproject/home/Twitter.jpg" alt="Twitter"></a>
+                <a href="#"><img src="webproject/home/Linkedin.jpg" alt="LinkedIn"></a>
+                <a href="#"><img src="webproject/home/Github.jpg" alt="GitHub"></a>
+            </div>
+            <p>&copy; 2024 The Cookies Shop</p>
+        </footer>
+    </div>
+
+    <script>
+        const modeToggle = document.getElementById('modeToggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const icon = modeToggle.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        });
+    </script>
+</body>
+
+</html>

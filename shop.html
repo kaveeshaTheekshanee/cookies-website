@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cookies Shop</title>
+    <link rel="stylesheet" href="ss.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="webproject/home/logo.png" alt="logo" />
+            <h1>The Cookies Shop</h1>
+        </div>
+        <div class="lists">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li  class="active"><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button id="modeToggle" class="mode-toggle"><i class="fas fa-moon"></i></button>
+    </nav>
+
+
+    <!-- Shop Grid -->
+    <section class="shop-section">
+        <h2>Our Best Cookies</h2>
+        <div class="product-grid">
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <img src="webproject/shop/1.jpg" alt="Chocolate Chip Cookies">
+                <h3>Chocolate Chip Cookies</h3>
+                <p>$2.50 / piece</p>
+                <p class="description">Classic cookies with chocolate chips, crispy on the outside, chewy on the
+                    inside.</p>
+                <a href="contact.html"><button>Order Now</button></a>
+            </div>
+
+            <div class="product-card">
+                <img src="webproject/shop/16.jpg" alt="Macaron Cookies">
+                <h3>Macaron Cookies</h3>
+                <p>$1.50 / piece</p>
+                <p class="description">Delicate almond shells filled with smooth ganache in vibrant colors.</p>
+                <a href="contact.html"><button>Order Now</button></a>
+            </div>
+
+            <div class="product-card">
+                <img src="webproject/shop/3.jpg" alt="Rainbow Cookies">
+                <h3>Rainbow Cookies</h3>
+                <p>$30.50 / 6 pieces</p>
+                <p class="description">Almond-based layered cookies with jam and chocolate. A colorful treat!</p>
+                <a href="contact.html"><button>Order Now</button></a>
+            </div>
+
+            <div class="product-card">
+                <img src="webproject/shop/12.jpg" alt="Sugar Cookies">
+                <h3>Sugar Cookies</h3>
+                <p>$2.25 / piece</p>
+                <p class="description">Soft sugar cookies with a buttery flavor. Sweet, simple, satisfying.</p>
+                <a href="contact.html"><button>Order Now</button></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="social-media-links">
+
+            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer"><img
+                    src="webproject/home/Twitter.jpg" alt="Twitter"></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"><img
+                    src="webproject/home/Linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><img
+                    src="webproject/home/Github.jpg" alt="GitHub"></a>
+        </div>
+        <p>&copy; 2024 The cookies shop <br></p>
+    </footer>
+    <button id="goToTopBtn" onclick="goToTop()">Go to Top</button>
+    </div>
+    <script>
+        const modeToggle = document.getElementById('modeToggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const icon = modeToggle.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        });
+    </script>
+</body>
+
+</html>
